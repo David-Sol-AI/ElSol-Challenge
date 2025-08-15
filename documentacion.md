@@ -20,23 +20,4 @@
 - **Qdrant** almacena embeddings y metadatos.
 - El endpoint `/chat` recupera información relevante y genera la respuesta con un modelo de chat.
 
-## C. Plan de desarrollo
 
-### Entrega MVP
-- Endpoint `/transcribe` funcional con almacenamiento en Qdrant.
-- Endpoint `/chat` que responde preguntas usando las transcripciones almacenadas.
-- Pruebas unitarias básicas y ejemplo de prueba en vivo contra Azure OpenAI.
-
-### Funcionalidades futuras
-- Transcripción en tiempo real y diferenciación de hablantes.
-- Soporte para documentos PDF e imágenes con OCR.
-- Autenticación y autorización de usuarios.
-- Persistencia de Qdrant en disco o servicio gestionado.
-- Pipelines de MLOps para versionar modelos y datos.
-
-### Plan de producción
-- Despliegue en contenedores (Docker/Kubernetes).
-- Uso de Azure OpenAI administrado con claves seguras y rotación.
-- Qdrant administrado o PostgreSQL con `pgvector` para persistencia.
-- Integración de monitoreo, logging y métricas.
-- Configuración de CI/CD y pruebas automatizadas.
